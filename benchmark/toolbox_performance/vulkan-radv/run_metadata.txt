@@ -1,4 +1,4 @@
-campaign: 20260804T181438Z-toolbox-performance-iq3
+campaign: 20260804T181438Z-toolbox-performance-iq3 + 20260805T070635Z-vulkan-radv-remaining-four
 host: fw1
 host_profile: gpu-workload-watch (accelerator-performance and maximum fans), amd_iommu=off
 kernel: 7.1.3-100.fc43.x86_64
@@ -17,5 +17,13 @@ flash_attention: enabled
 load_mode: none
 kv_cache_quantization: disabled
 ubatch_calibration: 256,512,1024,2048 across all nine depths
+Qwen3.6-27B-UD-Q8_K_XL.gguf ubatch: 256
+Qwen3.6-27B-UD-Q8_K_XL.gguf status: complete
+Qwen3.6-35B-A3B-UD-Q4_K_XL.gguf ubatch: 1024
+Qwen3.6-35B-A3B-UD-Q4_K_XL.gguf status: complete
+Qwen3.6-35B-A3B-UD-Q8_K_XL.gguf ubatch: 1024
+Qwen3.6-35B-A3B-UD-Q8_K_XL.gguf status: complete
+DeepSeek-V4-Flash-0731-UD-IQ2_XXS-00001-of-00003.gguf ubatch: 256
+DeepSeek-V4-Flash-0731-UD-IQ2_XXS-00001-of-00003.gguf status: complete
 DeepSeek-V4-Flash-0731-UD-IQ3_XXS-00001-of-00004.gguf ubatch: 256
 DeepSeek-V4-Flash-0731-UD-IQ3_XXS-00001-of-00004.gguf status: complete
